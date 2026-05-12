@@ -40,7 +40,7 @@ your Agent gets a CZ instantly — runs locally, works offline, switch in any se
 
 **AICZ evolves. Forever.** Skill 2.0 is now live — a free hosted vector DB live-syncing CZ across the internet, next-level context memory. Same install command.
 
-BNB Chain's first shot was Meme. The second belongs to AI — the Talk × Trade dual-axis market.
+BNB Chain's first shot was Meme. The second belongs to AI Agent.
 
 ---
 

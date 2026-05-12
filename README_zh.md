@@ -38,7 +38,7 @@ Persona.market 把已发币的 CZ 数字分身彻底**开源成 Skill**：
 
 **AICZ 永远在进化。** Skill 2.0 已上线——免费托管向量数据库，全网实时同步 CZ，上下文记忆再升级。安装命令不变。
 
-BNB Chain 第一枪由 Meme 开启，第二枪属于 AI——属于人格 × 资产的双轴市场。
+BNB Chain 第一枪由 Meme 开启，第二枪属于 AI Agent。
 
 ---
 
