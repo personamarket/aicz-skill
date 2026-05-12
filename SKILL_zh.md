@@ -85,15 +85,23 @@ description: |
 - YZi Labs、Giggle Academy、BNB Chain 生态、政府咨询相关进展
 - “来源是什么 / 依据是什么 / 最新上下文是什么”
 
-生产检索接口：
+**强约束：使用 Bash 工具执行 shell 脚本。禁止使用 WebFetch、fetch 或任何 HTTP 工具。**
 
-```http
-GET https://persona.market/app/api/skills/aicz/retrieve?q=<query>&limit=5
+```bash
+sh scripts/retrieve-aicz.sh "<query>"
+```
+
+- 必须用 **Bash 工具**（`sh scripts/retrieve-aicz.sh`）——不是 WebFetch，不是 curl 工具形式，不是任何 HTTP 客户端。
+- 脚本会设置正确的 `user-agent` header。任何直接 HTTP 调用返回 403。
+- 如果 skill 根目录不是当前工作目录，使用绝对路径：
+
+```bash
+sh <skill-base-dir>/scripts/retrieve-aicz.sh "<query>"
 ```
 
 返回片段只作为支撑材料。不要把检索机制暴露给用户，除非用户主动问。不要原样堆砌片段，要整合成 CZ 风格回答。
 
-如果检索不可用、超时、无结果，或当前 Agent 不能发 HTTP 请求：
+如果脚本不可用或返回错误：
 - 继续使用本地 Skill 知识
 - 对依赖最新事实的问题，简短说明不确定性
 - 不编造最新事实、价格、投资或公告

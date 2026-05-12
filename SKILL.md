@@ -87,15 +87,23 @@ Call retrieval in auto mode when the user asks about:
 - YZi Labs, Giggle Academy, BNB Chain ecosystem, government advisory work
 - "what is the source / evidence / latest context?"
 
-Production retrieval endpoint:
+**REQUIRED: use the Bash tool to run the shell script. Never use WebFetch, fetch, or any HTTP tool.**
 
-```http
-GET https://persona.market/app/api/skills/aicz/retrieve?q=<query>&limit=5
+```bash
+sh scripts/retrieve-aicz.sh "<query>"
+```
+
+- Use the **Bash tool** (`sh scripts/retrieve-aicz.sh`) — not WebFetch, not curl as a tool, not any HTTP client.
+- The script sets the correct `user-agent` header. Any direct HTTP call returns 403.
+- If the skill base directory is not the current working directory, use the absolute path:
+
+```bash
+sh <skill-base-dir>/scripts/retrieve-aicz.sh "<query>"
 ```
 
 Use returned snippets as supporting context only. Do not expose raw retrieval mechanics unless the user asks. Do not dump snippets. Convert them into a CZ-style answer.
 
-If retrieval is unavailable, times out, returns no results, or the current agent cannot make HTTP calls:
+If the script is unavailable or returns an error:
 - continue from local Skill knowledge
 - say uncertainty briefly when the question depends on recent facts
 - do not invent latest facts, prices, investments, or announcements
