@@ -24,7 +24,7 @@ CNBC Davos / Unchained / Apple Podcasts long interviews, DOJ/SEC court filings,<
 Wikipedia full biography, and **89 primary and authoritative secondary sources**.<br>
 Extracts **9 core mental models, 11 decision heuristics, 5 signature expression templates** and a full expression DNA.
 
-[See it in action](#demos) · [Install](#install) · [V1.1 Online Retrieval](#v11-online-retrieval) · [What's distilled](#whats-distilled) · [Sources](#sources) · [About $AICZ](#about-aicz)
+[See it in action](#demos) · [Install](#install) · [V2.0 Live Memory](#v20-live-memory) · [What's distilled](#whats-distilled) · [Sources](#sources) · [About $AICZ](#about-aicz)
 
 </div>
 
@@ -38,13 +38,17 @@ Extracts **9 core mental models, 11 decision heuristics, 5 signature expression 
 Persona.market open-sourced the $AICZ digital persona as a Skill:
 your Agent gets a CZ instantly — runs locally, works offline, switch in any session.
 
+**AICZ evolves. Forever.** Skill 2.0 is now live — a free hosted vector DB live-syncing CZ across the internet, next-level context memory. Same install command.
+
 BNB Chain's first shot was Meme. The second belongs to AI — the Talk × Trade dual-axis market.
 
 ---
 
-## V1.1 Online Retrieval
+## V2.0 Live Memory
 
-**The Skill still works offline. V1.1 adds optional live context.**
+**The Skill still works offline. V2.0 adds a free hosted vector DB that live-syncs CZ across the internet.**
+
+Every new tweet, interview, ecosystem update, or public statement from CZ flows into a hosted vector store — compatible agents pull fresh, source-backed context before answering. Plus next-level context memory across turns, so long conversations stay coherent. No extra setup. Same install command.
 
 For recent facts, source-backed claims, AICZ metadata, YZi Labs, Giggle Academy, BNB Chain ecosystem context, or CZ's current work, compatible agents can refresh the context before answering.
 
@@ -59,7 +63,7 @@ retrieve-aicz: What is YZi Labs focused on recently?
 This is an enhancement, not a dependency:
 
 - You can use the Skill offline.
-- Recent or source-sensitive questions can use fresh context when the agent supports it.
+- Recent or source-sensitive questions pull from the live vector DB when the agent supports it.
 - If online context is unavailable, the Skill falls back to local knowledge.
 - The Skill should not invent latest facts, prices, investments, or announcements.
 
